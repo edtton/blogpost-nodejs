@@ -1,0 +1,151 @@
+/* Reset some default styles */
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define industrial-style colors */
+body {
+    background-color: #1a1a1a;
+    /* Dark background */
+    color: #f2f2f2;
+    /* Light text */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    /* Dark header */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #444;
+    /* Slightly lighter than header */
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f2f2f2;
+    /* Light text for navigation links */
+    margin: 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6600;
+    /* Orange hover effect */
+}
+
+.form-container {
+    background-color: #3a443f;
+    /* Dark form background */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 2em;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 2em;
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+.form-submit:hover {
+    background-color: #e55e00;
+    /* Darker orange on hover */
+}
+
+.form-container button {
+    background-color: #ff6600;
+    /* Orange button */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff6600;
+    /* Orange outline on focus */
+}
+
+.form-container button:hover {
+    background-color: #ff4400;
+    /* Darker orange hover effect */
+}
+
+/* Add post-container and post styles */
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    flex: 1;
+    max-width: 400px;
+    /* Adjust this to your desired maximum width */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 2em;
+    background-color: #3a443f;
+    /* Dark post background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Add a hover effect to posts */
+.post:hover {
+    transform: scale(1.05);
+    /* Scale up by 5% */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /* Add a subtle shadow */
+}
+
+/* Add a hover effect to post titles */
+.post h2:hover {
+    color: #ff6600;
+    /* Orange hover effect */
+}
