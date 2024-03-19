@@ -41,6 +41,7 @@ app.get('/new', (req, res) => {
 // route that triggers when user hits submit on the "new post" page
 app.post('/submit', (req, res) => {
     // get the user inputted data from our form
+    // postTitle and postContent are the fields associated with those names 
     const { postTitle, postContent } = req.body;
 
     // create a new post "instance"
